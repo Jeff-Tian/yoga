@@ -9,6 +9,7 @@
     "gatsby-plugin-glamor": "^1.6.13",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-typography": "^1.7.19",
+    "gatsby-source-filesystem": "^1.5.39",
     "glamorous": "^4.13.1",
     "react-helmet": "^5.2.0",
     "typography-theme-kirkham": "^0.16.3"
