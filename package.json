@@ -1,20 +1,27 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "yoga",
+  "description": "A Yoga Man",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "jeff.tian@outlook.com",
   "dependencies": {
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-glamor": "^1.6.13",
-    "gatsby-plugin-react-helmet": "^2.0.10",
-    "gatsby-plugin-typography": "^1.7.19",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
-    "glamorous": "^4.13.1",
-    "react-helmet": "^5.2.0",
-    "typography-theme-kirkham": "^0.16.3",
-    "react-router-dom": "latest"
+    "gatsby": "^2.18.20",
+    "gatsby-link": "latest",
+    "gatsby-plugin-glamor": "latest",
+    "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-sitemap": "latest",
+    "gatsby-plugin-typography": "latest",
+    "gatsby-source-filesystem": "latest",
+    "gatsby-source-wordpress": "latest",
+    "gatsby-transformer-remark": "latest",
+    "glamor": "^2.20.40",
+    "glamorous": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-helmet": "latest",
+    "react-router-dom": "latest",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-kirkham": "latest"
   },
   "keywords": [
     "gatsby"
@@ -27,7 +34,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.12.0"
+    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
