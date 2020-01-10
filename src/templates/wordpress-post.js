@@ -12,7 +12,8 @@ const BlogPostTemplate = ({ data }) => (
     {/*/>*/}
     <h1>{data.wordpressPost.title}</h1>
     <p>
-      Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}
+      {/*Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}*/}
+      Written by {data.wordpressPost.author} on {data.wordpressPost.date}
     </p>
     <Img
       // sizes={data.wordpressPost.acf.feat_img.localFile.childImageSharp.sizes}
@@ -35,9 +36,6 @@ export const query = graphql`
       content
       excerpt
       date(formatString: "MMMM DD, YYYY")
-      author {
-        name
-      }
     }
   }
 `

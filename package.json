@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "yoga",
+  "description": "A Yoga Man",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jeff Tian <jeff.tian@outlook.com>",
   "dependencies": {
     "gatsby": "^2.18.20",
     "gatsby-image": "^2.2.38",
