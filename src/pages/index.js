@@ -9,8 +9,24 @@ export default ({ location, data }) => {
   return (
     <Layout location={location} data={data}>
       <g.H1 display={'inline-block'} borderBottom={'1px solid'}>
-        Amazing Pandas Eating Things
+        Keep practice
       </g.H1>
+
+      <h4>{data.allWordpressPost.totalCount} Posts</h4>
+      {data.allWordpressPost.edges.map(({ node }) => (
+        <div key={node.id}>
+          <Link
+            to={`/post/` + node.slug}
+            css={{ textDecoration: `none`, color: `inherit` }}
+          >
+            <g.H3 marginBottom={rhythm(1 / 4)}>
+              {node.title} <g.Span color="#BBB">— {node.date}</g.Span>
+            </g.H3>
+            <p>{node.excerpt}</p>
+          </Link>
+        </div>
+      ))}
+
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
@@ -44,6 +60,17 @@ export const query = graphql`
           fields {
             slug
           }
+          excerpt
+        }
+      }
+    }
+    allWordpressPost {
+      totalCount
+      edges {
+        node {
+          id
+          slug
+          title
           excerpt
         }
       }
