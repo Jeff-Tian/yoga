@@ -6,11 +6,28 @@ import Link from 'gatsby-link'
 import Layout from '../components/layout'
 
 export default ({ location, data }) => {
+  data.allText.edges.map(({ node }, i) => {
+    const fontFace = new FontFace(
+      `font-obfuscator-${i}`,
+      `url(data:application/x-font-woff;charset=utf-8;base64,${node.content.fonts.woff}) format('woff')`
+    )
+    document.fonts.add(fontFace)
+    console.log('loaded ', fontFace)
+
+    return fontFace
+  })
+
   return (
     <Layout location={location} data={data}>
       <g.H1 display={'inline-block'} borderBottom={'1px solid'}>
-        {data.allText.edges.map(({ node }) => (
-          <p>{node.content.html}</p>
+        {data.allText.edges.map(({ node }, i) => (
+          <p
+            style={{
+              fontFamily: `font-obfuscator-${i}`,
+              color: 'red',
+            }}
+            dangerouslySetInnerHTML={{ __html: node.content.html }}
+          />
         ))}
       </g.H1>
 
