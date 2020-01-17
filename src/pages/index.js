@@ -10,7 +10,7 @@ export default ({ location, data }) => {
     <Layout location={location} data={data}>
       <g.H1 display={'inline-block'} borderBottom={'1px solid'}>
         {data.allText.edges.map(({ node }) => (
-          <p>{node.content}</p>
+          <p>{node.content.html}</p>
         ))}
       </g.H1>
 
@@ -83,7 +83,14 @@ export const query = graphql`
       edges {
         node {
           id
-          content
+          content {
+            fonts {
+              ttf
+              woff
+              woff2
+            }
+            html
+          }
         }
       }
     }
