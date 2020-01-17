@@ -9,7 +9,9 @@ export default ({ location, data }) => {
   return (
     <Layout location={location} data={data}>
       <g.H1 display={'inline-block'} borderBottom={'1px solid'}>
-        Keep practice
+        {data.allText.edges.map(({ node }) => (
+          <p>{node.content}</p>
+        ))}
       </g.H1>
 
       <h4>{data.allWordpressPost.totalCount} Posts</h4>
@@ -20,7 +22,8 @@ export default ({ location, data }) => {
             css={{ textDecoration: `none`, color: `inherit` }}
           >
             <g.H3 marginBottom={rhythm(1 / 4)}>
-              {node.title} <g.Span color="#BBB">— {node.date}</g.Span>
+              {node.title}
+              <g.Span color="#BBB">— {node.date}</g.Span>
             </g.H3>
             <p>{node.excerpt}</p>
           </Link>
@@ -72,6 +75,15 @@ export const query = graphql`
           slug
           title
           excerpt
+        }
+      }
+    }
+    allText {
+      totalCount
+      edges {
+        node {
+          id
+          content
         }
       }
     }
