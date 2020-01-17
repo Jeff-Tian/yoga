@@ -53,5 +53,19 @@ module.exports = {
       },
     },
     // `gatsby-plugin-sitemap`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
+    `gatsby-transformer-obfuscator`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/tweets/`,
+      },
+    },
   ],
 }
