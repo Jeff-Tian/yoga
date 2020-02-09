@@ -9,7 +9,7 @@ dependencies:
   gatsby-plugin-typography: 2.3.22_e5484fbfbec3da3e4c3f9f904b8ca7b2
   gatsby-source-filesystem: 2.1.48_gatsby@2.19.12
   gatsby-source-wordpress: 3.1.60_gatsby@2.19.12
-  gatsby-transformer-obfuscator: 1.2.1_gatsby@2.19.12
+  gatsby-transformer-obfuscator: 1.3.0_gatsby@2.19.12
   gatsby-transformer-remark: 2.6.50_gatsby@2.19.12
   gatsby-transformer-yaml: 2.2.24_gatsby@2.19.12
   glamor: 2.20.40
@@ -17,7 +17,6 @@ dependencies:
   react: 16.12.0
   react-dom: 16.12.0_react@16.12.0
   react-helmet: 5.2.1_react@16.12.0
-  react-router-dom: 5.1.2_react@16.12.0
   react-typography: 0.16.19_react@16.12.0
   typography: 0.16.19
   typography-theme-kirkham: 0.16.19
@@ -4988,7 +4987,7 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-NLT843FVp3pt1gjJ/vsclgw6h7pIKDF9l8sWBFiIrJUjiwGqCVC+emylbuK8MFE8Js989SP40piqvgo+orEl3g==
-  /gatsby-transformer-obfuscator/1.2.1_gatsby@2.19.12:
+  /gatsby-transformer-obfuscator/1.3.0_gatsby@2.19.12:
     dependencies:
       '@babel/runtime': 7.8.4
       axios: 0.19.2
@@ -5001,7 +5000,7 @@ packages:
     peerDependencies:
       gatsby: ^2.0.15
     resolution:
-      integrity: sha512-frZykGoZjFg7Vw1ANPbF8QspPplDjTEhANogoyxKGvLAnTn6dlgTQjszrJ/1SAbtDEJhr6L8n9h7VFyI/RNgFg==
+      integrity: sha512-Mi7FPKPAfDcxeQJHQfdUTroSSDMo9mbhxY8coqPOlvAlrdflzfbBcOoh7EZRNaAE1Gq2151acZ6CQBkhHD2cLA==
   /gatsby-transformer-remark/2.6.50_gatsby@2.19.12:
     dependencies:
       '@babel/runtime': 7.8.4
@@ -5743,17 +5742,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
-  /history/4.10.1:
-    dependencies:
-      '@babel/runtime': 7.8.4
-      loose-envify: 1.4.0
-      resolve-pathname: 3.0.0
-      tiny-invariant: 1.1.0
-      tiny-warning: 1.0.3
-      value-equal: 1.0.1
-    dev: false
-    resolution:
-      integrity: sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==
   /hmac-drbg/1.0.1:
     dependencies:
       hash.js: 1.1.7
@@ -7441,19 +7429,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=
-  /mini-create-react-context/0.3.2_prop-types@15.7.2+react@16.12.0:
-    dependencies:
-      '@babel/runtime': 7.8.4
-      gud: 1.0.0
-      prop-types: 15.7.2
-      react: 16.12.0
-      tiny-warning: 1.0.3
-    dev: false
-    peerDependencies:
-      prop-types: ^15.0.0
-      react: ^0.14.0 || ^15.0.0 || ^16.0.0
-    resolution:
-      integrity: sha512-2v+OeetEyliMt5VHMXsBhABoJ0/M4RCe7fatd/fBy6SMiKazUSEt3gxxypfnk2SHMkdBYvorHRoQxuGoiwbzAw==
   /mini-css-extract-plugin/0.8.2_webpack@4.41.5:
     dependencies:
       loader-utils: 1.2.3
@@ -8384,12 +8359,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
-  /path-to-regexp/1.8.0:
-    dependencies:
-      isarray: 0.0.1
-    dev: false
-    resolution:
-      integrity: sha512-n43JRhlUKUAlibEJhPeir1ncUID16QnEjNpwzNdO3Lm4ywrBpBZ5oLD0I6br9evr1Y9JTqwRtAh7JLoOzAQdVA==
   /path-type/2.0.0:
     dependencies:
       pify: 2.3.0
@@ -9259,39 +9228,6 @@ packages:
       react: ^16.0.0
     resolution:
       integrity: sha512-gAGnwWkf+NOTig9oOowqid9O0HjTDC+XVGBCAmJYYJ2A2cN/O4gDdIuuUQjv8A4v6GDwVfJkagpBBLW5OW9HSw==
-  /react-router-dom/5.1.2_react@16.12.0:
-    dependencies:
-      '@babel/runtime': 7.8.4
-      history: 4.10.1
-      loose-envify: 1.4.0
-      prop-types: 15.7.2
-      react: 16.12.0
-      react-router: 5.1.2_react@16.12.0
-      tiny-invariant: 1.1.0
-      tiny-warning: 1.0.3
-    dev: false
-    peerDependencies:
-      react: '>=15'
-    resolution:
-      integrity: sha512-7BPHAaIwWpZS074UKaw1FjVdZBSVWEk8IuDXdB+OkLb8vd/WRQIpA4ag9WQk61aEfQs47wHyjWUoUGGZxpQXew==
-  /react-router/5.1.2_react@16.12.0:
-    dependencies:
-      '@babel/runtime': 7.8.4
-      history: 4.10.1
-      hoist-non-react-statics: 3.3.2
-      loose-envify: 1.4.0
-      mini-create-react-context: 0.3.2_prop-types@15.7.2+react@16.12.0
-      path-to-regexp: 1.8.0
-      prop-types: 15.7.2
-      react: 16.12.0
-      react-is: 16.12.0
-      tiny-invariant: 1.1.0
-      tiny-warning: 1.0.3
-    dev: false
-    peerDependencies:
-      react: '>=15'
-    resolution:
-      integrity: sha512-yjEuMFy1ONK246B+rsa0cUam5OeAQ8pyclRDgpxuSCrAlJ1qN9uZ5IgyKC7gQg0w8OM50NXHEegPh/ks9YuR2A==
   /react-side-effect/1.2.0_react@16.12.0:
     dependencies:
       react: 16.12.0
@@ -9670,10 +9606,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
-  /resolve-pathname/3.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==
   /resolve-url/0.2.1:
     dev: false
     resolution:
@@ -10805,14 +10737,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
-  /tiny-invariant/1.1.0:
-    dev: false
-    resolution:
-      integrity: sha512-ytxQvrb1cPc9WBEI/HSeYYoGD0kWnGEOR8RY6KomWLBVhqz0RgTwVO9dLrGz7dC+nN9llyI7OKAgRq8Vq4ZBSw==
-  /tiny-warning/1.0.3:
-    dev: false
-    resolution:
-      integrity: sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
   /tmp/0.0.31:
     dependencies:
       os-tmpdir: 1.0.2
@@ -11400,10 +11324,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==
-  /value-equal/1.0.1:
-    dev: false
-    resolution:
-      integrity: sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw==
   /vary/1.1.2:
     dev: false
     engines:
@@ -11926,7 +11846,7 @@ specifiers:
   gatsby-plugin-typography: ^2.3.20
   gatsby-source-filesystem: ^2.1.45
   gatsby-source-wordpress: ^3.1.57
-  gatsby-transformer-obfuscator: ^1.2.1
+  gatsby-transformer-obfuscator: ^1.3.0
   gatsby-transformer-remark: ^2.6.47
   gatsby-transformer-yaml: ^2.2.23
   glamor: ^2.20.40
@@ -11936,7 +11856,6 @@ specifiers:
   react: ^16.12.0
   react-dom: ^16.12.0
   react-helmet: ^5.2.1
-  react-router-dom: ^5.1.2
   react-typography: ^0.16.19
   typography: ^0.16.19
   typography-theme-kirkham: ^0.16.19

@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Jeff Tian <jeff.tian@outlook.com>",
   "dependencies": {
-    "@mikaelkristiansson/domready": "^1.0.10",
     "gatsby": "^2.18.20",
     "gatsby-image": "^2.2.38",
     "gatsby-link": "^2.2.27",
@@ -14,7 +13,7 @@
     "gatsby-plugin-typography": "^2.3.20",
     "gatsby-source-filesystem": "^2.1.45",
     "gatsby-source-wordpress": "^3.1.57",
-    "gatsby-transformer-obfuscator": "^1.2.1",
+    "gatsby-transformer-obfuscator": "^1.3.0",
     "gatsby-transformer-remark": "^2.6.47",
     "gatsby-transformer-yaml": "^2.2.23",
     "glamor": "^2.20.40",
@@ -22,7 +21,6 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "react-router-dom": "^5.1.2",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-kirkham": "^0.16.19"
