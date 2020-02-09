@@ -7,14 +7,19 @@ import Layout from '../components/layout'
 
 export default ({ location, data }) => {
   data.allText.edges.map(({ node }, i) => {
-    const fontFace = new FontFace(
-      `font-obfuscator-${i}`,
-      `url(data:application/x-font-woff;charset=utf-8;base64,${node.content.fonts.woff}) format('woff')`
-    )
-    document.fonts.add(fontFace)
-    console.log('loaded ', fontFace)
+    if (typeof window === 'object') {
+      const fontFace = new FontFace(
+        `font-obfuscator-${i}`,
+        `url(data:application/x-font-woff;charset=utf-8;base64,${node.content.fonts.woff}) format('woff')`
+      )
+      document.fonts.add(fontFace)
+      console.log('loaded ', fontFace)
 
-    return fontFace
+      return fontFace
+    } else {
+      console.log('skipped loading font as in server sider');
+      return null;
+    }
   })
 
   return (
