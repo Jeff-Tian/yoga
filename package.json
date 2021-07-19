@@ -12,7 +12,7 @@
     "gatsby-plugin-sitemap": "^2.2.25",
     "gatsby-plugin-typography": "^2.3.20",
     "gatsby-source-filesystem": "^2.1.45",
-    "gatsby-source-wordpress": "^3.1.57",
+    "gatsby-source-wordpress": "^4.0.8",
     "gatsby-transformer-obfuscator": "^1.3.0",
     "gatsby-transformer-remark": "^2.6.47",
     "gatsby-transformer-yaml": "^2.2.23",
